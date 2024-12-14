@@ -1,0 +1,33 @@
+.card {
+  display:flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  .card-header {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+  }
+  .card-body {
+    flex: 3;
+    padding-top: 1rem;
+    p {
+      line-height: 1.5rem;
+    }
+  }
+  .card-footer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    .trash {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
